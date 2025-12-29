@@ -337,7 +337,7 @@ export default function BullyingReportPrototype() {
   const summary = useMemo(() => {
     const tag = what.length ? what.join(", ") : "(sin etiquetas)";
     return {
-      title: danger ? "Marcaste una situación urgente" : "Reporte listo para enviar",
+      title: danger ? "Marcaste una situación urgente" : "Comunicación lista para enviar",
       body: `Curso: ${course} • Lugar: ${location} • Cuándo: ${when}
 Tipo: ${tag}
 Evidencia: ${evidence ? "Sí" : "No"}
@@ -387,7 +387,7 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
                 </>
               }
               title="Cómo funciona este canal"
-              description="Prototipo: simula la experiencia. En un sitio real, esto enviaría tu reporte al Equipo de Convivencia."
+              description="Prototipo: simula la experiencia. En un sitio real, esto enviaría tu comunicación al Equipo de Convivencia."
             >
               <div className="space-y-3 text-sm leading-relaxed text-white/80">
                 <div className="flex gap-2">
@@ -436,7 +436,7 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
         <main className="mt-8">
           <Tabs defaultValue="reportar">
             <TabsList className={cn("rounded-2xl p-1", "bg-white/8 border border-white/10")}>
-              <TabsTrigger value="reportar">Reportar</TabsTrigger>
+              <TabsTrigger value="reportar">Comunicar</TabsTrigger>
               <TabsTrigger value="acompanamiento">Acompañamiento</TabsTrigger>
               <TabsTrigger value="recursos">Recursos</TabsTrigger>
             </TabsList>
@@ -453,7 +453,7 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
                     <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
                       <div className="flex items-center justify-between gap-4">
                         <div>
-                          <div className="font-semibold">Reporte anónimo</div>
+                          <div className="font-semibold">Comunicación anónima</div>
                           <div className="text-sm text-white/70">Activado por defecto. Podés dejar un contacto si querés.</div>
                         </div>
                         <div className="flex items-center gap-3">
@@ -556,7 +556,7 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
                           setSent(true);
                         }}
                       >
-                        Enviar reporte <ArrowRight className="h-4 w-4" />
+                        Enviar comunicación <ArrowRight className="h-4 w-4" />
                       </Button>
                       <Button variant="secondary" className="rounded-2xl" onClick={reset}>
                         Limpiar
@@ -588,7 +588,7 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
                       <CardDescription className="text-white/70">Para que la escuela actúe con rapidez y cuidado.</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <Step n={1} title="Se registra y se evalúa el riesgo" text="Se revisa el reporte, se prioriza si hay urgencia y se cuida la confidencialidad." />
+                      <Step n={1} title="Se registra y se evalúa el riesgo" text="Se revisa la comunicación, se prioriza si hay urgencia y se cuida la confidencialidad." />
                       <Step n={2} title="Intervención" text="Se activan adultos referentes, mediación o medidas de protección según el caso." />
                       <Step n={3} title="Comunicación positiva" text="Se trabaja con mensajes y acuerdos para reparar, frenar la agresión y sostener a quien fue afectado/a." />
                       <Step n={4} title="Seguimiento" text="No termina en una charla: se monitorea y se acompaña en el tiempo." />
@@ -750,7 +750,7 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
           <Separator />
           <div className="pt-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
             <div>
-              Prototipo UI • Canal de reporte y acompañamiento • <span className="text-white/70">No reemplaza una emergencia</span>
+              Prototipo UI • Canal de comunicación y acompañamiento • <span className="text-white/70">No reemplaza una emergencia</span>
             </div>
             <div className="flex items-center gap-2">
               <Lock className="h-4 w-4" />

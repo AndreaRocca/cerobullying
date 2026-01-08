@@ -23,10 +23,10 @@ import {
  * Nota: Esta versión está simplificada (sin shadcn/ui) para que compile fácil en Vite.
  */
  
+const gradient =
+  "bg-gradient-to-b from-[#2b211b] via-[#3a2d24] to-[#1f1712] relative";
+const glass = "bg-white/6 backdrop-blur-md border border-white/10";
 
-
-const gradient = "bg-gradient-to-br from-[#0b1022] via-[#F88631]/20 to-[#0b1022]";
-const glass = "bg-white/6 backdrop-blur-md border border-[#F88631]/15";
 
 const chips = [
   "Insultos / burlas",
@@ -69,9 +69,9 @@ function Button({ className = "", variant = "primary", disabled, onClick, childr
   const base =
     "inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-white/30";
   const styles =
-    variant === "secondary"
-      ? "bg-white/10 hover:bg-white/15 border border-white/10 text-white"
-      : "bg-white text-slate-900 hover:bg-white/90";
+  variant === "secondary"
+    ? "bg-white/10 hover:bg-white/15 border border-white/10 text-white"
+    : "bg-[#F88631] text-[#1a120d] hover:bg-[#f37b23]";
   const dis = disabled ? "opacity-50 cursor-not-allowed hover:bg-inherit" : "";
   return (
     <button type={type} className={cn(base, styles, dis, className)} disabled={disabled} onClick={onClick}>
@@ -368,8 +368,14 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
   };
 
   return (
-    <div className={cn("min-h-screen text-white", gradient)}>
-      <div className="max-w-6xl mx-auto px-4 py-10">
+  <div className={cn("min-h-screen text-white relative", gradient)}>
+    {/* Halos de color */}
+    <div className="pointer-events-none absolute -top-48 -left-48 h-[560px] w-[560px] rounded-full bg-[#F88631]/18 blur-3xl" />
+    <div className="pointer-events-none absolute -bottom-56 -right-56 h-[720px] w-[720px] rounded-full bg-[#F88631]/10 blur-3xl" />
+
+    {/* Contenido */}
+    <div className="max-w-6xl mx-auto px-4 py-10 relative">
+
         <header className="flex flex-col gap-6">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">

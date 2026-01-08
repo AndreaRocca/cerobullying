@@ -23,10 +23,8 @@ import {
  * Nota: Esta versión está simplificada (sin shadcn/ui) para que compile fácil en Vite.
  */
  
-const gradient =
-  "bg-gradient-to-b from-[#2b211b] via-[#3a2d24] to-[#1f1712] relative";
-const glass = "bg-white/6 backdrop-blur-md border border-white/10";
-
+const gradient = "bg-[#3B2A22]";
+const glass = "bg-white/85 border border-black/10";
 
 const chips = [
   "Insultos / burlas",
@@ -71,7 +69,8 @@ function Button({ className = "", variant = "primary", disabled, onClick, childr
   const styles =
   variant === "secondary"
     ? "bg-white/10 hover:bg-white/15 border border-white/10 text-white"
-    : "bg-[#F88631] text-[#1a120d] hover:bg-[#f37b23]";
+	: "bg-[#F88631] text-white hover:bg-[#E57525]"
+
   const dis = disabled ? "opacity-50 cursor-not-allowed hover:bg-inherit" : "";
   return (
     <button type={type} className={cn(base, styles, dis, className)} disabled={disabled} onClick={onClick}>
@@ -206,7 +205,12 @@ function TabsTrigger({ value, className = "", children }) {
       onClick={() => ctx?.setValue(value)}
       className={cn(
         "rounded-2xl px-4 py-2 text-sm font-semibold border transition",
-        active ? "bg-white/20 border-white/30 text-white" : "bg-white/5 border-white/10 text-white/80 hover:bg-white/10",
+		
+		active
+  ? "bg-[#F88631] text-white border-[#F88631]"
+  : "bg-white/5 border-black/10 text-[#2B1E18]"
+
+		
         className
       )}
     >
@@ -368,7 +372,7 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
   };
 
   return (
-  <div className={cn("min-h-screen text-white relative", gradient)}>
+  <div className={cn("min-h-screen text-[#2B1E18]", gradient)}>
     {/* Halos de color */}
     <div className="pointer-events-none absolute -top-48 -left-48 h-[560px] w-[560px] rounded-full bg-[#F88631]/18 blur-3xl" />
     <div className="pointer-events-none absolute -bottom-56 -right-56 h-[720px] w-[720px] rounded-full bg-[#F88631]/10 blur-3xl" />
@@ -383,7 +387,8 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
                 <Shield className="h-6 w-6" />
               </div>
               <div>
-                <div className="text-2xl md:text-3xl font-semibold tracking-tight">Hablemos. No estás solo/a.</div>
+                <div className="text-2xl md:text-3xl font-semibold tracking-tight text-white">
+Hablemos. No estás solo/a.</div>
                 <div className="text-white/70">Canal seguro para pedir ayuda y activar acompañamiento escolar.</div>
               </div>
             </div>

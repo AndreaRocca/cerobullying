@@ -69,7 +69,7 @@ function Button({ className = "", variant = "primary", disabled, onClick, childr
   const styles =
   variant === "secondary"
     ? "bg-white/10 hover:bg-white/15 border border-white/10 text-white"
-	: "bg-[#F88631] text-white hover:bg-[#E57525]"
+	: "bg-[#F88631] text-white hover:bg-[#E57525]";
 
   const dis = disabled ? "opacity-50 cursor-not-allowed hover:bg-inherit" : "";
   return (
@@ -199,18 +199,16 @@ function TabsList({ className = "", children }) {
 function TabsTrigger({ value, className = "", children }) {
   const ctx = React.useContext(TabsContext);
   const active = ctx?.value === value;
+
   return (
     <button
       type="button"
       onClick={() => ctx?.setValue(value)}
       className={cn(
         "rounded-2xl px-4 py-2 text-sm font-semibold border transition",
-		
-		active
-  ? "bg-[#F88631] text-white border-[#F88631]"
-  : "bg-white/5 border-black/10 text-[#2B1E18]"
-
-		
+        active
+          ? "bg-[#F88631] text-white border-[#F88631]"
+          : "bg-white/5 border-black/10 text-[#2B1E18]",
         className
       )}
     >
@@ -218,6 +216,7 @@ function TabsTrigger({ value, className = "", children }) {
     </button>
   );
 }
+
 
 function TabsContent({ value, className = "", children }) {
   const ctx = React.useContext(TabsContext);

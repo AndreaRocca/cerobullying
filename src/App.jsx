@@ -298,12 +298,12 @@ function PositiveNudges() {
       </CardHeader>
       <CardContent className="grid md:grid-cols-2 gap-3">
         {prompts.map((p) => (
-          <div key={p.title} className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+          <div key={p.title} className={cn("rounded-2xl p-4", ""bg-[#5A4033]/85 border border-white/15")}>
             <div className="font-semibold text-white/95">{p.title}</div>
             <div className="mt-1 text-sm text-white/75">{p.text}</div>
           </div>
         ))}
-        <div className={cn("rounded-2xl p-4 md:col-span-2", "bg-white/8 border border-white/10")}>
+        <div className={cn("rounded-2xl p-4 md:col-span-2", ""bg-[#5A4033]/85 border border-white/15")}>
           <div className="flex items-center gap-2 text-white/95 font-semibold">
             <HeartHandshake className="h-4 w-4" />
             Recordatorio
@@ -461,7 +461,7 @@ Hablemos. No estás solo/a.</div>
                   </CardHeader>
 
                   <CardContent className="space-y-5">
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       <div className="flex items-center justify-between gap-4">
                         <div>
                           <div className="font-semibold">Comunicación anónima</div>
@@ -614,13 +614,13 @@ Hablemos. No estás solo/a.</div>
                       <CardDescription className="text-white/70">Primero la seguridad.</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-3 text-sm text-white/75 leading-relaxed">
-                      <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                      <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                         Si vos o alguien corre peligro inmediato, buscá a un adulto ahora.
                         <div className="mt-2 text-white/70">
                           En Argentina: ante una emergencia, llamá al <span className="font-semibold text-white">911</span>.
                         </div>
                       </div>
-                      <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                      <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                         Si hay ciberbullying, no difundas. Guardá capturas y pedí ayuda.
                       </div>
                     </CardContent>
@@ -639,16 +639,16 @@ Hablemos. No estás solo/a.</div>
                     <CardDescription className="text-white/70">Rápido, simple, accionable.</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm text-white/75">
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       ✅ Decí a un adulto: <span className="font-semibold">qué pasó</span>, <span className="font-semibold">dónde</span>, <span className="font-semibold">cuándo</span>.
                     </div>
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       ✅ Si fue online: guardá evidencia (capturas) y pedí a un adulto que acompañe.
                     </div>
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       ✅ Si sos testigo: acercate a la persona afectada y ofrecé compañía.
                     </div>
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       ✅ No te culpes: pedir ayuda es una forma de cuidado.
                     </div>
 
@@ -698,7 +698,7 @@ Hablemos. No estás solo/a.</div>
                     <CardDescription className="text-white/70">Qué hacer hoy, sin esperar.</CardDescription>
                   </CardHeader>
                   <CardContent className="grid md:grid-cols-2 gap-3">
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       <div className="font-semibold text-white/95">Si te pasa a vos</div>
                       <ul className="mt-2 text-sm text-white/75 space-y-1 list-disc pl-5">
                         <li>Contale a un adulto de confianza.</li>
@@ -706,7 +706,7 @@ Hablemos. No estás solo/a.</div>
                         <li>No respondas con violencia: buscá apoyo.</li>
                       </ul>
                     </div>
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       <div className="font-semibold text-white/95">Si sos testigo</div>
                       <ul className="mt-2 text-sm text-white/75 space-y-1 list-disc pl-5">
                         <li>Acercate y acompañá a la persona.</li>
@@ -714,7 +714,7 @@ Hablemos. No estás solo/a.</div>
                         <li>No difundas contenido dañino.</li>
                       </ul>
                     </div>
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       <div className="font-semibold text-white/95">Si estás en redes</div>
                       <ul className="mt-2 text-sm text-white/75 space-y-1 list-disc pl-5">
                         <li>Bloqueá y reportá cuentas agresoras.</li>
@@ -722,7 +722,7 @@ Hablemos. No estás solo/a.</div>
                         <li>Pedí ayuda adulta para denunciar.</li>
                       </ul>
                     </div>
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       <div className="font-semibold text-white/95">Para la escuela (nota)</div>
                       <div className="mt-2 text-sm text-white/75 leading-relaxed">
                         Integrar con protocolo institucional: registro, triage, medidas de protección, comunicación positiva y seguimiento.
@@ -737,7 +737,7 @@ Hablemos. No estás solo/a.</div>
                     <CardDescription className="text-white/70">Lo mínimo necesario para cuidar.</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm text-white/75">
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       <div className="font-semibold">Principios</div>
                       <ul className="mt-2 space-y-1 list-disc pl-5">
                         <li>Datos mínimos</li>
@@ -746,7 +746,7 @@ Hablemos. No estás solo/a.</div>
                         <li>Retención limitada</li>
                       </ul>
                     </div>
-                    <div className={cn("rounded-2xl p-4", "bg-white/8 border border-white/10")}>
+                    <div className={cn("rounded-2xl p-4", "bg-[#5A4033]/85 border border-white/15")}>
                       <div className="font-semibold">En este prototipo</div>
                       <div className="mt-2">No se envía nada: todo se queda en tu navegador.</div>
                     </div>

@@ -23,11 +23,23 @@ import {
  * Nota: Esta versión está simplificada (sin shadcn/ui) para que compile fácil en Vite.
  */
  
-
-
-const gradient = 
-"bg-[radial-gradient(900px_circle_at_20%_0%,rgba(248,134,49,0.18),transparent_55%),radial-gradient(700px_circle_at_90%_20%,rgba(248,134,49,0.10),transparent_50%),linear-gradient(135deg,#0b1022,#141538,#0b1022)]";
+const gradientStyle = {
+  background: `
+    radial-gradient(
+      900px circle at 20% 0%,
+      rgba(248,134,49,0.18),
+      transparent 55%
+    ),
+    radial-gradient(
+      700px circle at 90% 20%,
+      rgba(248,134,49,0.10),
+      transparent 50%
+    ),
+    linear-gradient(135deg, #0b1022, #141538, #0b1022)
+  `,
+};
 const glass = "bg-white/6 backdrop-blur-md border border-[#F88631]/15";
+
 
 const chips = [
   "Insultos / burlas",
@@ -369,7 +381,11 @@ Detalle: ${details.slice(0, 220)}${details.length > 220 ? "…" : ""}`,
   };
 
   return (
-    <div className={cn("min-h-screen text-white", gradient)}>
+    <div
+  className="min-h-screen text-white"
+  style={gradientStyle}
+>
+
       <div className="max-w-6xl mx-auto px-4 py-10">
         <header className="flex flex-col gap-6">
           <div className="flex items-center justify-between gap-4">

@@ -24,7 +24,8 @@ import {
  */
  
 const gradient = "bg-[#3B2A22]";
-const glass = "bg-white/85 border border-black/10";
+const glass = "bg-[#4A342A]/70 backdrop-blur-md border border-white/12";
+
 
 const chips = [
   "Insultos / burlas",

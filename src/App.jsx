@@ -208,7 +208,7 @@ function TabsTrigger({ value, className = "", children }) {
         "rounded-2xl px-4 py-2 text-sm font-semibold border transition",
 active
   ? "bg-[#F88631] text-white border-[#F88631]"
-  : "bg-black/20 border-white/10 text-white/80 hover:bg-black/30",
+  : "bg-black/40 border-white/10 text-white/80 hover:bg-black/30",
         className
       )}
     >
@@ -446,7 +446,7 @@ Hablemos. No estás solo/a.</div>
 
         <main className="mt-8">
           <Tabs defaultValue="reportar">
-            <TabsList className={cn("rounded-2xl p-1", "bg-black/20 border border-white/10")}>
+            <TabsList className={cn("rounded-2xl p-1", "bg-black/40 border border-white/10")}>
               <TabsTrigger value="reportar">Comunicar</TabsTrigger>
               <TabsTrigger value="acompanamiento">Acompañamiento</TabsTrigger>
               <TabsTrigger value="recursos">Recursos</TabsTrigger>

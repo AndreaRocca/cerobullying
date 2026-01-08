@@ -25,7 +25,8 @@ import {
  
 
 
-const gradient = "bg-[#F88631]";
+const gradient = const gradient =
+"bg-[radial-gradient(900px_circle_at_20%_0%,rgba(248,134,49,0.18),transparent_55%),radial-gradient(700px_circle_at_90%_20%,rgba(248,134,49,0.10),transparent_50%),linear-gradient(135deg,#0b1022,#141538,#0b1022)]";
 const glass = "bg-white/6 backdrop-blur-md border border-[#F88631]/15";
 
 const chips = [

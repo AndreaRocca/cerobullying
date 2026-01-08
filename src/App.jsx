@@ -298,12 +298,12 @@ function PositiveNudges() {
       </CardHeader>
       <CardContent className="grid md:grid-cols-2 gap-3">
         {prompts.map((p) => (
-          <div key={p.title} className={cn("rounded-2xl p-4", ""bg-[#5A4033]/50 border border-white/15")}>
+          <div key={p.title} className={cn("rounded-2xl p-4", "bg-[#5A4033]/50 border border-white/15")}>
             <div className="font-semibold text-white/95">{p.title}</div>
             <div className="mt-1 text-sm text-white/75">{p.text}</div>
           </div>
         ))}
-        <div className={cn("rounded-2xl p-4 md:col-span-2", ""bg-[#5A4033]/50 border border-white/15")}>
+        <div className={cn("rounded-2xl p-4 md:col-span-2", "bg-[#5A4033]/50 border border-white/15")}>
           <div className="flex items-center gap-2 text-white/95 font-semibold">
             <HeartHandshake className="h-4 w-4" />
             Recordatorio

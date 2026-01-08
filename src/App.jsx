@@ -206,9 +206,9 @@ function TabsTrigger({ value, className = "", children }) {
       onClick={() => ctx?.setValue(value)}
       className={cn(
         "rounded-2xl px-4 py-2 text-sm font-semibold border transition",
-        active
-          ? "bg-[#F88631] text-white border-[#F88631]"
-          : "bg-white/5 border-black/10 text-[#2B1E18]",
+active
+  ? "bg-[#F88631] text-white border-[#F88631]"
+  : "bg-black/20 border-white/10 text-white/80 hover:bg-black/30",
         className
       )}
     >
@@ -216,7 +216,6 @@ function TabsTrigger({ value, className = "", children }) {
     </button>
   );
 }
-
 
 function TabsContent({ value, className = "", children }) {
   const ctx = React.useContext(TabsContext);
@@ -447,7 +446,7 @@ Hablemos. No estás solo/a.</div>
 
         <main className="mt-8">
           <Tabs defaultValue="reportar">
-            <TabsList className={cn("rounded-2xl p-1", "bg-white/8 border border-white/10")}>
+            <TabsList className={cn("rounded-2xl p-1", "bg-black/20 border border-white/10")}>
               <TabsTrigger value="reportar">Comunicar</TabsTrigger>
               <TabsTrigger value="acompanamiento">Acompañamiento</TabsTrigger>
               <TabsTrigger value="recursos">Recursos</TabsTrigger>
